@@ -1,0 +1,20 @@
+.mirage-card {
+  background: var(--surface-primary);
+  border: 1px solid var(--surface-border);
+  border-radius: var(--radius-md);
+  padding: 16px;
+  position: relative;
+}
+
+.mirage-card--elevated {
+  background: var(--surface-secondary);
+}
+
+.mirage-card--interactive {
+  cursor: pointer;
+  transition: border-color 0.15s ease, background-color 0.15s ease;
+}
+
+.mirage-card--interactive:hover {
+  border-color: var(--surface-tertiary);
+}

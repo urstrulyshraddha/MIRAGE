@@ -1,0 +1,38 @@
+.mirage-cert-card {
+  background: var(--surface-primary);
+  border: 1px solid var(--surface-border);
+  border-radius: var(--radius-sm);
+  padding: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.mirage-cert-top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.mirage-cert-name {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.mirage-cert-objectives {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-top: 6px;
+}
+
+.mirage-cert-obj-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 6px 8px;
+  background: var(--surface-secondary);
+  border-radius: var(--radius-sm);
+  font-size: 12px;
+}

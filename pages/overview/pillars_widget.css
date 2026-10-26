@@ -1,0 +1,62 @@
+.mirage-pillars-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.mirage-pillar-card {
+  background: var(--surface-primary);
+  border: 1px solid var(--surface-border);
+  padding: 14px;
+  border-radius: var(--radius-md);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.mirage-pillar-badge {
+  width: 24px;
+  height: 24px;
+  border: 1px solid var(--accent-sage-border);
+  background: var(--accent-sage-subtle);
+  color: var(--accent-sage-hover);
+  font-family: var(--font-mono);
+  font-size: 11px;
+  font-weight: 700;
+  display: grid;
+  place-content: center;
+  border-radius: var(--radius-sm);
+}
+
+.mirage-pillar-title {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.mirage-pillar-desc {
+  font-size: 11px;
+  color: var(--text-muted);
+  line-height: 1.35;
+  margin-top: 3px;
+}
+
+/* Responsive Grid Stacking */
+@media (max-width: 1024px) {
+  .mirage-pillars-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .mirage-pillars-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px;
+  }
+
+  .mirage-pillar-card {
+    padding: 10px;
+  }
+}

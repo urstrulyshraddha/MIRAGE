@@ -1,0 +1,33 @@
+.mirage-badge {
+  display: inline-flex;
+  align-items: center;
+  font-family: var(--font-mono);
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 3px 8px;
+  border-radius: var(--radius-full);
+  border: 1px solid var(--surface-border);
+  background: var(--surface-primary);
+  color: var(--text-secondary);
+  line-height: 1;
+}
+
+.mirage-badge--accent {
+  background: var(--accent-sage-subtle);
+  color: var(--accent-sage-hover);
+  border-color: var(--accent-sage-border);
+}
+
+.mirage-badge--subtle {
+  background: transparent;
+  color: var(--text-muted);
+  border-color: var(--surface-border-subtle);
+}
+
+.mirage-badge--active {
+  background: var(--text-primary);
+  color: var(--bg-base);
+  border-color: var(--text-primary);
+  font-weight: 600;
+}

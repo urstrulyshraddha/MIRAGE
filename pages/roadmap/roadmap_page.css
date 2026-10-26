@@ -1,0 +1,17 @@
+.mirage-roadmap-header {
+  margin-bottom: 24px;
+}
+
+.mirage-path-creation-box {
+  background: var(--surface-primary);
+  border: 1px solid var(--surface-border);
+  border-radius: var(--radius-sm);
+  padding: 16px;
+  margin-bottom: 24px;
+}
+
+.mirage-creation-form-row {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}

@@ -1,0 +1,110 @@
+.mirage-header {
+  height: var(--header-height);
+  border-bottom: 1px solid var(--surface-border);
+  background: rgba(22, 24, 23, 0.4);
+  backdrop-filter: blur(6px);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  position: sticky;
+  top: 0;
+  z-index: 30;
+}
+
+.mirage-header-left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.mirage-menu-toggle {
+  display: none;
+  background: transparent;
+  border: 1px solid var(--surface-border);
+  border-radius: var(--radius-sm);
+  color: var(--text-secondary);
+  padding: 6px;
+  cursor: pointer;
+}
+
+.mirage-menu-toggle:hover {
+  background: var(--surface-secondary);
+  color: var(--text-primary);
+}
+
+.mirage-header-time {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--text-muted);
+}
+
+.mirage-header-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.mirage-search-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--surface-primary);
+  border: 1px solid var(--surface-border);
+  color: var(--text-secondary);
+  padding: 6px 12px;
+  border-radius: var(--radius-sm);
+  font-size: 12px;
+  cursor: pointer;
+  font-family: var(--font-sans);
+  transition: all 0.15s ease;
+}
+
+.mirage-search-btn:hover {
+  border-color: var(--surface-tertiary);
+  color: var(--text-primary);
+}
+
+.mirage-kbd {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  background: var(--surface-secondary);
+  border: 1px solid var(--surface-border);
+  padding: 2px 5px;
+  border-radius: var(--radius-sm);
+  color: var(--text-muted);
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+  .mirage-header {
+    padding: 0 14px;
+  }
+
+  .mirage-menu-toggle {
+    display: flex;
+  }
+
+  .mirage-header-time {
+    display: none;
+  }
+
+  .desktop-only {
+    display: none !important;
+  }
+
+  .mirage-search-btn span,
+  .mirage-kbd {
+    display: none;
+  }
+
+  .mirage-search-btn {
+    padding: 6px 8px;
+  }
+}
+
+@media (min-width: 769px) {
+  .mobile-only {
+    display: none !important;
+  }
+}

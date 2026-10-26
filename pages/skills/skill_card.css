@@ -1,0 +1,42 @@
+.mirage-skill-card {
+  background: var(--surface-primary);
+  border: 1px solid var(--surface-border);
+  border-radius: var(--radius-sm);
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.mirage-skill-top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+.mirage-skill-name {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.mirage-skill-evidence {
+  font-size: 12px;
+  color: var(--text-secondary);
+  background: var(--surface-secondary);
+  padding: 8px 10px;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--surface-border-subtle);
+  margin-top: 10px;
+  line-height: 1.4;
+}
+
+.mirage-skill-footer {
+  margin-top: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid var(--surface-border-subtle);
+  padding-top: 10px;
+}

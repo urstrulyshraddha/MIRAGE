@@ -1,0 +1,22 @@
+.mirage-note-card {
+  background: var(--surface-primary);
+  border: 1px solid var(--surface-border);
+  border-radius: var(--radius-sm);
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.mirage-note-content {
+  background: var(--surface-secondary);
+  border: 1px solid var(--surface-border-subtle);
+  border-radius: var(--radius-sm);
+  padding: 10px;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--text-primary);
+  white-space: pre-wrap;
+  line-height: 1.4;
+  overflow-x: auto;
+}

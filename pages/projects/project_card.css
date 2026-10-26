@@ -1,0 +1,27 @@
+.mirage-project-card {
+  background: var(--surface-primary);
+  border: 1px solid var(--surface-border);
+  border-radius: var(--radius-sm);
+  padding: 18px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.mirage-project-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  margin-top: 6px;
+}
+
+.mirage-tech-tag {
+  background: var(--surface-secondary);
+  border: 1px solid var(--surface-border);
+  padding: 2px 6px;
+  font-family: var(--font-mono);
+  font-size: 10px;
+  color: var(--text-secondary);
+  border-radius: var(--radius-sm);
+}

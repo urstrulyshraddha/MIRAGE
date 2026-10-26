@@ -1,0 +1,59 @@
+.mirage-modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(14, 16, 15, 0.85);
+  backdrop-filter: blur(2px);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+}
+
+.mirage-modal-box {
+  background: var(--surface-primary);
+  border: 1px solid var(--surface-border);
+  border-radius: var(--radius-sm);
+  width: 100%;
+  max-width: 520px;
+  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.6);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.mirage-modal-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 18px;
+  border-bottom: 1px solid var(--surface-border-subtle);
+}
+
+.mirage-modal-title {
+  font-family: var(--font-mono);
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text-primary);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.mirage-modal-close {
+  background: transparent;
+  border: none;
+  color: var(--text-muted);
+  cursor: pointer;
+  display: flex;
+  padding: 2px;
+}
+
+.mirage-modal-close:hover {
+  color: var(--text-primary);
+}
+
+.mirage-modal-body {
+  padding: 18px;
+  overflow-y: auto;
+  max-height: 75vh;
+}

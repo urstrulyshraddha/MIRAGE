@@ -1,0 +1,96 @@
+.mirage-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-sans);
+  font-weight: 500;
+  border-radius: var(--radius-sm);
+  border: 1px solid transparent;
+  cursor: pointer;
+  transition: background-color 0.15s ease, border-color 0.15s ease, color 0.15s ease, transform 0.05s ease;
+  gap: 6px;
+  line-height: 1;
+}
+
+.mirage-btn:active:not(:disabled) {
+  transform: scale(0.98);
+}
+
+.mirage-btn:focus-visible {
+  outline: 2px solid var(--accent-sage);
+  outline-offset: 1px;
+}
+
+.mirage-btn:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+/* Sizes */
+.mirage-btn--sm {
+  font-size: 11px;
+  padding: 6px 10px;
+  border-radius: var(--radius-sm);
+}
+
+.mirage-btn--md {
+  font-size: 13px;
+  padding: 8px 14px;
+  border-radius: var(--radius-sm);
+}
+
+/* Variants */
+.mirage-btn--primary {
+  background: var(--accent-sage);
+  color: var(--text-primary);
+  border-color: var(--accent-sage);
+}
+
+.mirage-btn--primary:hover:not(:disabled) {
+  background: var(--accent-sage-hover);
+  border-color: var(--accent-sage-hover);
+}
+
+.mirage-btn--secondary {
+  background: var(--surface-secondary);
+  color: var(--text-primary);
+  border-color: var(--surface-border);
+}
+
+.mirage-btn--secondary:hover:not(:disabled) {
+  background: var(--surface-tertiary);
+  border-color: var(--surface-border);
+}
+
+.mirage-btn--outline {
+  background: transparent;
+  color: var(--text-secondary);
+  border-color: var(--surface-border);
+}
+
+.mirage-btn--outline:hover:not(:disabled) {
+  color: var(--text-primary);
+  border-color: var(--text-secondary);
+}
+
+.mirage-btn--ghost {
+  background: transparent;
+  color: var(--text-secondary);
+  border-color: transparent;
+}
+
+.mirage-btn--ghost:hover:not(:disabled) {
+  color: var(--text-primary);
+  background: var(--surface-primary);
+}
+
+.mirage-btn--danger {
+  background: var(--danger-subtle);
+  color: #ff9999;
+  border-color: var(--danger-border);
+}
+
+.mirage-btn--danger:hover:not(:disabled) {
+  background: var(--danger);
+  color: var(--text-primary);
+}
