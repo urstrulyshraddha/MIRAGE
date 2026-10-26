@@ -3,7 +3,6 @@ import react from '@vitejs/plugin-react';
 import path from 'path';
 
 export default defineConfig({
-  base: '/MIRAGE/',
   plugins: [react()],
   resolve: {
     alias: {
